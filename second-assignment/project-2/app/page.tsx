@@ -172,7 +172,7 @@ export default function Home()
             {/* <!-- Call To Action Section Start --> */}
             <section className="cta">
                 <h1>GET READY FOR A BRIGHT FUTURE</h1>
-                <a href="contact.html" className="hero_btn">CONTACT US</a>
+                <Link href="/contact" className="hero_btn">CONTACT US</Link>
             </section>
             {/* <!-- Call To Action Section End --> */}
 
