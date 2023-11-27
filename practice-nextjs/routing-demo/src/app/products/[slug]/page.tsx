@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default function Home() {
+export default function ProductsId({ params }: { params: { slug: string } }) {
   return (
     <body>
       <div>
@@ -8,12 +8,10 @@ export default function Home() {
         <Link href={"/about"}>About</Link>
         <br />
         <Link href={"/contact"}>Contact</Link>
-        
       </div>
-      <div><h1>Main Page</h1></div>
-      <br /><br />
-      <h2>Products</h2>
-      <Link href={"/products"}> Products</Link>
+      <div>
+        <h1>Product Detail{params.slug}</h1>
+      </div> 
     </body>
   );
 }
