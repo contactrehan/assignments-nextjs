@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
-
+import Head from 'next/head'
+import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,7 +16,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Head>
+        <title>"Blogs"</title>
+        <meta name="description"  />
+      </Head>
+      <body className={inter.className}>
+        <header>
+          <h1>My Blog</h1>
+          <nav>
+            <ul>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
+            </ul>
+          </nav>
+        </header>
+
+        {children}
+
+        <footer>
+          <p>&copy; 2023 My Blog</p>
+        </footer>
+      </body>
     </html>
   )
 }
