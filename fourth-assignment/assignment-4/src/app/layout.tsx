@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import "./img/pexels-photo-1181298.jpeg"
 
 const inter = Inter({ subsets: ['latin'] })
 

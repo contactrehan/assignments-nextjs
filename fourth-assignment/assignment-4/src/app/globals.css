@@ -1,7 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.bg-image {
+  background-image: url('https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  padding: 20px;
+}
+.button {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
+.button:hover {
+  background-color: #4a5568;
+}
+
+.button:active {
+  background-color: #2d3748;
+}
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

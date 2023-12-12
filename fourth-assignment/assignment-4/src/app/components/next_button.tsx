@@ -1,6 +1,7 @@
 
 "use client"
 
+
 import { useState } from 'react';
 
 const namesList = ['Rehan', 'Ali', 'Zuhaib', 'Talha', 'Zaman', "Khusar"];
@@ -22,10 +23,18 @@ const Next_button = () => {
   return (
     <div>
       <p className="text-xl mb-4">Current Name: {currentName}</p>
-      <button  className="bg-blue-500 text-white px-4 py-2 mr-2 rounded"
-      onClick={handlePrevious}>Previous</button>
-      <button className="bg-green-500 text-white px-4 py-2 rounded"
-      onClick={handleNext}>Next</button>
+      <button
+  className={`button bg-blue-500 text-white px-4 py-2 mr-2 rounded styles.button`}
+  onClick={handlePrevious}
+>
+  Previous
+</button>
+<button
+  className={`button bg-green-500 text-white px-4 py-2 rounded styles.button`}
+  onClick={handleNext}
+>
+  Next
+</button>
     </div>
   );
 };
