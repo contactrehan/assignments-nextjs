@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 
-const namesList = ['Rehan', 'Ali', 'Zuhaib', 'Talha', 'Zaman', "Khusar"];
+const namesList = ['Rehan', 'Ali', 'Zuhaib', 'Talha', 'Zaman', "Khusar","Naseema"];
 
 const Next_button = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
