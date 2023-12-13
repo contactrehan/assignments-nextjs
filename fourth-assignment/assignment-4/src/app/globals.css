@@ -1,13 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.bg-image {
+/* .bg-image {
   background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 400px;
   padding: 20px;
+} */
+body{
+  background-color: #F2F2F2
+
 }
 .button {
   cursor: pointer;

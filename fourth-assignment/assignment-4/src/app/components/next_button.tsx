@@ -22,7 +22,10 @@ const Next_button = () => {
 
   return (
     <div>
-      <p className="text-xl mb-4 text-white">Current Name: {currentName}</p>
+     <p className="text-xl mb-4 text-black font-semibold leading-tight">
+  Current Name: {currentName}
+</p>
+
       <button
   className={`button bg-red-500 text-white px-4 py-2 mr-2 rounded styles.button`}
   onClick={handlePrevious}

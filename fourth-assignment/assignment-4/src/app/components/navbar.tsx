@@ -8,17 +8,17 @@ const Navbar = () => {
       <ul className="flex space-x-4 text-white">
         <li>
           <Link href="/">
-            <a className="hover:text-gray-300">Home</a>
+            <p className="hover:text-gray-300">Home</p>
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a className="hover:text-gray-300">About</a>
+            <p className="hover:text-gray-300">About</p>
           </Link>
         </li>
         <li>
           <Link href="/contact">
-            <a className="hover:text-gray-300">Contact</a>
+            <p className="hover:text-gray-300">Contact</p>
           </Link>
         </li>
       </ul>
